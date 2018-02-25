@@ -33,7 +33,7 @@ public class PalindromeRecursive {
 	   {
 	       String cleanupStr = s.replaceAll("[\\W]", "");   
 
-	       cleanupStr.toLowerCase();
+	       cleanupStr = cleanupStr.toLowerCase();
 
 	       System.out.println(cleanupStr);
 	      
