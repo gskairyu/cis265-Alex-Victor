@@ -30,46 +30,36 @@ public class PalindromeRecursive {
 	  
  /* Creating a method for performing string clean operation to get rid of unwanted characters */ 
 	   private static String cleanupString(String s) 
-	   { 
+	   {
 	       String cleanupStr = s.replaceAll("[\\W]", "");   
+
+	       cleanupStr.toLowerCase();
+
+	       System.out.println(cleanupStr);
 	      
 	       return cleanupStr; 
 	    } 
 	   
 	   
- private static boolean checkPalindrome(String inputString, int low, int high) { 
-	 
-	
-	 StringBuilder inputstring2=new StringBuilder();
-	 inputstring2.append(inputString);
-	 inputstring2= inputstring2.reverse();
-	 String check=inputstring2.toString();
-	 System.out.println(check);//debug track
-	 int i=high;
-	 char ac=check.charAt(i);
-	 String a=String.valueOf(ac);
-	 char ab=check.charAt(i);
-	 String b=String.valueOf(ab);
-	 boolean tcheck=false;
-	 System.out.println("second mark");//  debug track
-	 if(a.equalsIgnoreCase(b)){
-		 System.out.println(i);//debug track
-		 if(i==0) {
-			 
-			 
-			
-	     		tcheck= true;
-	     		 return tcheck;
-			
+ 	   private static boolean checkPalindrome(String inputString, int low, int high) { 
+
+               boolean tcheck = false;
+	       if (low <= high){
+		   StringBuilder inputstring2=new StringBuilder();
+	 	   inputstring2.append(inputString);
+	 	   String check=inputstring2.toString();
+	 	   System.out.println(check);//debug track
+	 	   char highChar = check.charAt(high);
+	 	   char lowChar = check.charAt(low);
+	 	   System.out.println("second mark");//  debug track
+	 	   if (highChar == lowChar){
+	     		tcheck = true;
+		   }
 		 }
-		 else {
-			 checkPalindrome(inputString,low,high-1);
-		 }
-	
-	 }
-	 
-	 
-		 return tcheck;
+	       else {
+		checkPalindrome(inputString,(low + 1),(high - 1));
+	       }
+	       return tcheck;
 	 
  } 
 }  
