@@ -1,0 +1,47 @@
+Enter A(dd), R(emove), S(can), or Q(uit)
+A
+Enter Passenger Name
+passengeer1
+Enter the ticket type(AC/Gen)
+ac
+Enter the Seat number
+100
+Enter A(dd), R(emove), S(can), or Q(uit)
+a
+Enter Passenger Name
+passenger2
+Enter the ticket type(AC/Gen)
+gen
+Enter the Seat number
+101
+Enter A(dd), R(emove), S(can), or Q(uit)
+a
+Enter Passenger Name
+passenger3
+Enter the ticket type(AC/Gen)
+ac
+Enter the Seat number
+103
+Enter A(dd), R(emove), S(can), or Q(uit)
+s
+Enter the passenger whose details are neeeded
+passenger87
+Passsenger with the name: PASSENGER87not found
+Enter A(dd), R(emove), S(can), or Q(uit)
+s
+Enter the passenger whose details are neeeded
+passenger2
+PASSENGER2 GEN
+Enter A(dd), R(emove), S(can), or Q(uit)
+r
+Passenger removed is :PASSENGEER1 AC
+Enter A(dd), R(emove), S(can), or Q(uit)
+s
+Enter the passenger whose details are neeeded
+passengeer1
+Passsenger with the name: PASSENGEER1not found
+Enter A(dd), R(emove), S(can), or Q(uit)
+q
+2
+PASSENGER2 GEN
+PASSENGER3 AC
