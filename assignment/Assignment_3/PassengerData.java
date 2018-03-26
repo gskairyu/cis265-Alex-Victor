@@ -66,7 +66,8 @@ class PassengerData extends Passenger {
     case 'Q': 
     //DISPLAY CONTENTS IN QUEUE AND QUIT THE LOOP
     	Iterator g=createQueue.iterator() ;
-    	System.out.println(createQueue.size());
+    	System.out.println("leaving que with"+createQueue.size()+"passengers");
+    	System.out.println("The passenger details are:");
     	while(g.hasNext()){
     	System.out.println(g.next());
     	}
