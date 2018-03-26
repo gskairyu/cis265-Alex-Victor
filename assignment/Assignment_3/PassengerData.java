@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.*; 
 class PassengerData extends Passenger { 
  public static CreateQueue<Passenger> createQueue; 
  public PassengerData() { 
@@ -36,17 +36,38 @@ class PassengerData extends Passenger {
      break; 
     case 'R': 
     //REMOVE PASSENGER FROM THE QUEUE 
+    	System.out.println("Passenger removed is :"+createQueue.dequeue()); 
      /* YOUR CODE HERE */ 
      break; 
     case 'S': 
-    //SCAN AND DISPLAY DETAILS OF A PARTICULAR PASSENGER 
+    //SCAN AND DISPLAY DETAILS OF A PARTICULAR PASSENGER
+    	System.out.println("Enter the passenger whose details are neeeded");
+    	String check=(input.nextLine()).toUpperCase();
+    	Iterator k=createQueue.iterator() ;
+    	String gat2=String.valueOf(k.next());
+    	System.out.println(gat2);
+    	String[] splitStr = gat2.split("\\s+");
+    	System.out.println(splitStr[0]);
+    	//while(k.hasNext()){
+        	//String[] splitStr = gat2.split("\\s+");
+    	/*if(splitStr[0].equals(check)) {
+    		
+    		System.out.println(k.next());
+    		break;
+    	}*/
+    	//}
+    	//System.out.println(k.next());
+    		System.out.println("Passsenger with the name: "+check +"not found");
+    		//System.out.println(splitStr[0]);
+    	
      /* YOUR CODE HERE */ 
      break; 
     case 'Q': 
     //DISPLAY CONTENTS IN QUEUE AND QUIT THE LOOP
-    	System.out.println(createQueue.size()); 
-    	while(createQueue.iterator().hasNext()==true){
-    	System.out.println(createQueue.iterator().next());
+    	Iterator g=createQueue.iterator() ;
+    	System.out.println(createQueue.size());
+    	while(g.hasNext()){
+    	System.out.println(g.next());
     	}
      /* YOUR CODE HERE */ 
      break; 
