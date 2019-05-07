@@ -1,0 +1,9 @@
+newyork
+cairo
+toronto
+barcelona
+london
+paris
+rome
+athens
+venice
